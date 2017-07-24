@@ -1,11 +1,9 @@
 import Logger from './helpers/logger';
+import algorithm from './helpers/algorithm';
 
 let logger = new Logger();
 
-//Your code should go here instead of the welcome message below. Create and modify additional files as necessary.
-
-const welcomeMessage = "Congrats, you're up and running! Welcome to the first moshtix code challenge! " +
-    "Please replace this message with your solution and feel free to add " +
-    "or modify other files as necessary. Good luck : )";
-
-logger.log(welcomeMessage);
+//.log function takes in algorithm function with loop counter as an argument.
+for (let i = 1; i <= 100; i++) {
+  logger.log(algorithm(i));
+};
